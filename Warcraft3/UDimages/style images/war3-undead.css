@@ -1,0 +1,84 @@
+BODY {
+	FONT-SIZE: 10pt; COLOR: #b6b5a2; FONT-FAMILY: arial,helvetica,sans-serif
+}
+P {
+	FONT-SIZE: 10pt; COLOR: #b6b5a2; FONT-FAMILY: arial,helvetica,sans-serif
+}
+SPAN {
+	FONT-SIZE: 10pt; COLOR: #b6b5a2; FONT-FAMILY: arial,helvetica,sans-serif
+}
+PRE {
+	FONT-SIZE: 10pt; COLOR: #3e9cdc
+}
+BLOCKQUOTE {
+	FONT-SIZE: 10pt; COLOR: #b6b5a2; FONT-FAMILY: arial,helvetica,sans-serif
+}
+CITE {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #ffffff; FONT-STYLE: normal; FONT-FAMILY: arial,helvetica,sans-serif
+}
+EM {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #ffffff; FONT-STYLE: normal; FONT-FAMILY: arial,helvetica,sans-serif
+}
+B {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #ffffff; FONT-STYLE: normal; FONT-FAMILY: arial,helvetica,sans-serif
+}
+B.normal {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #09d114; FONT-STYLE: normal; FONT-FAMILY: arial,helvetica,sans-serif; LETTER-SPACING: 2px
+}
+B.gray {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #ffffff; FONT-STYLE: normal; FONT-FAMILY: arial,helvetica,sans-serif
+}
+SMALL {
+	FONT-WEIGHT: normal; FONT-SIZE: 8pt; COLOR: #ffffff; FONT-STYLE: normal; FONT-FAMILY: arial,helvetica,sans-serif
+}
+SMALL.normal {
+	FONT-WEIGHT: normal; FONT-SIZE: 8pt; COLOR: #aaaaaa; FONT-STYLE: normal; FONT-FAMILY: arial,helvetica,sans-serif
+}
+LI {
+	FONT-SIZE: 10pt; COLOR: #b6b5a2; FONT-FAMILY: arial,helvetica,sans-serif
+}
+H2 {
+	COLOR: #ffffff; FONT-FAMILY: arial,helvetica,sans-serif
+}
+SPAN.header {
+	FONT-WEIGHT: bold; FONT-SIZE: 12pt; COLOR: #09d114; FONT-FAMILY: arial,helvetica,sans-serif; LETTER-SPACING: 3px; FONT-VARIANT: small-caps
+}
+SPAN.header2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #ffffff; FONT-FAMILY: arial,helvetica,sans-serif; LETTER-SPACING: 2px
+}
+SPAN.header3 {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #ffffff; FONT-FAMILY: arial,helvetica,sans-serif; LETTER-SPACING: 2px
+}
+DIV.tooltip {
+	BORDER-RIGHT: #09d114 0px solid; BORDER-TOP: #09d114 1px solid; LEFT: 0px; VISIBILITY: hidden; BORDER-LEFT: #09d114 0px solid; WIDTH: 205px; BORDER-BOTTOM: #09d114 1px solid; FONT-FAMILY: arial,helvetica,sans-serif; POSITION: absolute; BACKGROUND-COLOR: black
+}
+TD.tooltip {
+	FONT-WEIGHT: normal; FONT-SIZE: 8pt; COLOR: #aaaaaa; FONT-STYLE: normal
+}
+IMG.border {
+	BORDER-LEFT-COLOR: #29282d; BORDER-BOTTOM-COLOR: #29282d; BORDER-TOP-STYLE: solid; BORDER-TOP-COLOR: #29282d; BORDER-RIGHT-STYLE: solid; BORDER-LEFT-STYLE: solid; BORDER-RIGHT-COLOR: #29282d; BORDER-BOTTOM-STYLE: solid
+}
+A:link {
+	FONT-WEIGHT: bold; COLOR: #09d114; FONT-FAMILY: arial,helvetica,sans-serif
+}
+A:visited {
+	FONT-WEIGHT: bold; COLOR: #aaaaaa; FONT-FAMILY: arial,helvetica,sans-serif
+}
+A:hover {
+	FONT-WEIGHT: bold; COLOR: #34dec0; FONT-FAMILY: arial,helvetica,sans-serif
+}
+A:active {
+	FONT-WEIGHT: bold; COLOR: #ffffff; FONT-FAMILY: arial,helvetica,sans-serif
+}
+A.tiny:link {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #09d114; FONT-FAMILY: arial,helvetica,sans-serif
+}
+A.tiny:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #aaaaaa; FONT-FAMILY: arial,helvetica,sans-serif
+}
+A.tiny:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #34dec0; FONT-FAMILY: arial,helvetica,sans-serif
+}
+A.tiny:active {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #ffffff; FONT-FAMILY: arial,helvetica,sans-serif
+}

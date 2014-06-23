@@ -7,12 +7,43 @@
 //
 
 #import "WAR3AppDelegate.h"
+#import "WAR3HumanViewController.h"
+#import "WAR3OrcViewController.h"
+#import "WAR3UDViewController.h"
+#import "WAR3NEViewController.h"
+#import "WAR3NeutralViewController.h"
+
 
 @implementation WAR3AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
+    
+    WAR3HumanViewController *humViewController = [WAR3HumanViewController new];
+    WAR3OrcViewController *orcViewController = [WAR3OrcViewController new];
+    WAR3UDViewController *udViewController = [WAR3UDViewController new];
+    WAR3NEViewController *neViewController = [WAR3NEViewController new];
+    WAR3NeutralViewController *neuViewController = [WAR3NeutralViewController new];
+    
+    UINavigationController *humNavController = [[UINavigationController alloc]initWithRootViewController:humViewController];
+    UINavigationController *orcNavController = [[UINavigationController alloc]initWithRootViewController:orcViewController];
+    UINavigationController *udNavController = [[UINavigationController alloc]initWithRootViewController:udViewController];
+    UINavigationController *neNavController = [[UINavigationController alloc]initWithRootViewController:neViewController];
+    UINavigationController *neoNavController = [[UINavigationController alloc]initWithRootViewController:neuViewController];
+    
+    UITabBarController *tabBarController = [[UITabBarController alloc]init];
+    NSArray *viewControllers = @[humNavController ,orcNavController,udNavController,neNavController,neoNavController];
+    
+    tabBarController.viewControllers = viewControllers;
+   
+ 
+    
+    
+    [self.window setRootViewController:tabBarController];
+    
+    [self.window setBackgroundColor:[UIColor clearColor]];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 							
