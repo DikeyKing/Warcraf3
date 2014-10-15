@@ -1,14 +1,14 @@
 //
-//  WAR3NeutralHero.m
-//  Warcraft3
+//  HumanHero.m
+//  expandList
 //
-//  Created by Dikey on 5/5/14.
-//  Copyright (c) 2014 Dikey. All rights reserved.
+//  Created by Dikey on 3/30/14.
+//
 //
 
-#import "WAR3NeutralHero.h"
+#import "WAR3UDHero.h"
 
-@implementation WAR3NeutralHero
+@implementation WAR3UDHero
 
 -(instancetype)init
 {
@@ -21,7 +21,7 @@
 
 - (NSArray *)getDeserializedArray
 {
-    NSString *path = [[NSBundle mainBundle]pathForResource:@"NeutralHeros" ofType:@"json" ];
+    NSString *path = [[NSBundle mainBundle]pathForResource:@"WAR3UDHero" ofType:@"json" ];
     NSData *jsonData = [[NSData alloc]initWithContentsOfFile:path];
     
     NSError *error = nil;
@@ -42,5 +42,6 @@
     
     return _deserializedArray;
 }
+
 
 @end

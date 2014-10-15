@@ -1,14 +1,14 @@
 //
-//  WAR3NeutralHero.m
-//  Warcraft3
+//  HumanHero.m
+//  expandList
 //
-//  Created by Dikey on 5/5/14.
-//  Copyright (c) 2014 Dikey. All rights reserved.
+//  Created by Dikey on 3/30/14.
+//
 //
 
-#import "WAR3NeutralHero.h"
+#import "WAR3OrcHero.h"
 
-@implementation WAR3NeutralHero
+@implementation WAR3OrcHero
 
 -(instancetype)init
 {
@@ -21,7 +21,7 @@
 
 - (NSArray *)getDeserializedArray
 {
-    NSString *path = [[NSBundle mainBundle]pathForResource:@"NeutralHeros" ofType:@"json" ];
+    NSString *path = [[NSBundle mainBundle]pathForResource:@"WAR3OrcHero" ofType:@"json" ];
     NSData *jsonData = [[NSData alloc]initWithContentsOfFile:path];
     
     NSError *error = nil;
@@ -29,16 +29,16 @@
                      JSONObjectWithData:jsonData
                      options:NSJSONReadingMutableContainers
                      error:&error];
-    
+
     if ([jsonObject isKindOfClass:[NSDictionary class]]){
-        NSDictionary *deserializedDictionary = jsonObject;
-        NSLog(@"Deserialized JSON Dictionary = %@",
-              deserializedDictionary);
-    }
+            NSDictionary *deserializedDictionary = jsonObject;
+            NSLog(@"Deserialized JSON Dictionary = %@",
+                  deserializedDictionary);
+        }
     else if ([jsonObject isKindOfClass:[NSArray class]]){
-        _deserializedArray = (NSArray *)jsonObject;
-        //   NSLog(@"NSArray will be displayed");
-    }
+            _deserializedArray = (NSArray *)jsonObject;
+            //   NSLog(@"NSArray will be displayed");
+        }
     
     return _deserializedArray;
 }

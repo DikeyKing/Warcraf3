@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A9D9C80C18EA5C9A0016B7E1"
-               BuildableName = "Warcraft3.app"
+               BuildableName = "WARCRAFT3.app"
                BlueprintName = "Warcraft3"
                ReferencedContainer = "container:Warcraft3.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A9D9C80C18EA5C9A0016B7E1"
-            BuildableName = "Warcraft3.app"
+            BuildableName = "WARCRAFT3.app"
             BlueprintName = "Warcraft3"
             ReferencedContainer = "container:Warcraft3.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A9D9C80C18EA5C9A0016B7E1"
-            BuildableName = "Warcraft3.app"
+            BuildableName = "WARCRAFT3.app"
             BlueprintName = "Warcraft3"
             ReferencedContainer = "container:Warcraft3.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A9D9C80C18EA5C9A0016B7E1"
-            BuildableName = "Warcraft3.app"
+            BuildableName = "WARCRAFT3.app"
             BlueprintName = "Warcraft3"
             ReferencedContainer = "container:Warcraft3.xcodeproj">
          </BuildableReference>

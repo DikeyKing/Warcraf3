@@ -1,70 +1,92 @@
 //
-//  WAR3NeutralViewController.m
+//  WAR3NEViewController.m
 //  Warcraft3
 //
-//  Created by Dikey on 5/5/14.
+//  Created by Dikey on 4/8/14.
 //  Copyright (c) 2014 Dikey. All rights reserved.
 //
 
-#import "WAR3NeutralViewController.h"
-#import "WAR3neutralHero.h"
-#import "WAR3NeutralHeroViewController.h"
+#import "WAR3NEViewController.h"
+#import "WAR3NEHero.h"
+#import "WAR3NEUnit.h"
+#import "WAR3NightElfArchitect.h"
 
-@interface WAR3NeutralViewController ()
+
+
+#import "WAR3NEHeroViewController.h"
+#import "WAR3NEUnitViewController.h"
+#import "WAR3NightElfArchitectViewController.h"
+
+@interface WAR3NEViewController ()
 
 @end
 
-@implementation WAR3NeutralViewController
-
+@implementation WAR3NEViewController
 
 -(instancetype)init
 {
     self = [super init];
     if (self) {
-        self.title = @"Neutral";
+        self.title = @"NightElf";
+        self.tabBarItem.image = [UIImage imageNamed:@"Time@2x.png"];
+
+        
     }
     return self;
 }
+
+
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
     NSLog(@"Did selected row at SECTION %ld,ROW %ld ",(long)indexPath.section,(long)indexPath.row);
-    
+ 
     if (indexPath.section == 0 ) {
-        WAR3NeutralHeroViewController *nhvc= [WAR3NeutralHeroViewController new];
-        nhvc.selectedRow = indexPath.row;
-        [self.navigationController pushViewController:nhvc animated:YES];
+        WAR3NEHeroViewController *ohvc= [WAR3NEHeroViewController new];
+        ohvc.selectedRow = indexPath.row;
+        [self.navigationController pushViewController:ohvc animated:YES];
     }
-
+    if (indexPath.section == 1 ) {
+        WAR3NEUnitViewController *ouvc = [WAR3NEUnitViewController new];
+        ouvc.selectedRow = indexPath.row;
+        
+        [self.navigationController pushViewController:ouvc animated:YES];
+    }
     
-
+    if (indexPath.section == 2 ) {
+        WAR3NightElfArchitectViewController *navc = [WAR3NightElfArchitectViewController new];
+        navc.selectedRow = indexPath.row;
+        [self.navigationController pushViewController:navc animated:YES];
+    }
 }
 
 - (NSInteger)numberOfSections
 {
-    return 1;
+    return 3;
 }
 
 - (void)viewDidLoad
 {
+    
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    sectionData = [[NSMutableArray alloc]initWithCapacity : 1];
+    sectionData = [[NSMutableArray alloc]initWithCapacity : 3];
     
-    WAR3NeutralHero *neuHero = [[WAR3NeutralHero alloc]init];
-    [neuHero getDeserializedArray];
+    WAR3NEHero *NEHero = [[WAR3NEHero alloc]init];
+    [NEHero getDeserializedArray];
     
     NSMutableDictionary *dict = [[NSMutableDictionary alloc]init];
     
-    [dict setObject:@"中立英雄" forKey:@"groupname"];
+    [dict setObject:@"精灵英雄" forKey:@"groupname"];
     
     //Arr1 初始化以及个数初始化
-    NSMutableArray *arr1 = [[NSMutableArray alloc]initWithCapacity:[neuHero.deserializedArray count]];
+    NSMutableArray *arr1 = [[NSMutableArray alloc]initWithCapacity:[NEHero.deserializedArray count]];
     
     //将hero array中的所有名字加入到 arr1 中
-    for (int i = 0; i<[neuHero.deserializedArray count]; i++) {
-        NSDictionary *dictionary  = neuHero.deserializedArray[i];
+    for (int i = 0; i<[NEHero.deserializedArray count]; i++) {
+        NSDictionary *dictionary  = NEHero.deserializedArray[i];
         NSString *name = [dictionary objectForKey:@"name"];
         [arr1 addObject:name];
     }
@@ -72,14 +94,14 @@
     [dict setObject:arr1 forKey:@"name"];
     [sectionData addObject: dict];
     
-    /*
-    WAR3HumanUnit *humUnit= [[WAR3HumanUnit alloc]init];
-    [humUnit getDeserializedArray];
-    dict = [[NSMutableDictionary alloc]initWithCapacity : [humUnit.deserializedArray count]];
-    [dict setObject:@"人族单位" forKey:@"groupname"];
-    NSMutableArray *arr2 = [[NSMutableArray alloc]initWithCapacity:[humUnit.deserializedArray count]];
-    for (int i = 0 ; i< [humUnit.deserializedArray count]; i++) {
-        NSDictionary *dictionary = humUnit.deserializedArray[i];
+    WAR3NEUnit *NEUnit= [[WAR3NEUnit alloc]init];
+    [NEUnit getDeserializedArray];
+    dict = [[NSMutableDictionary alloc]initWithCapacity : [NEUnit.deserializedArray count]];
+    [dict setObject:@"精灵单位" forKey:@"groupname"];
+    NSMutableArray *arr2 = [[NSMutableArray alloc]initWithCapacity:[NEUnit.deserializedArray count]];
+    
+    for (int i = 0 ; i< [NEUnit.deserializedArray count]; i++) {
+        NSDictionary *dictionary = NEUnit.deserializedArray[i];
         NSString *name = [dictionary objectForKey:@"name"];
         [arr2 addObject:name];
     }
@@ -87,13 +109,18 @@
 	[sectionData addObject: dict];
     
     
-	dict = [[NSMutableDictionary alloc]initWithCapacity:16];
-    [dict setObject:@"人族建筑" forKey:@"groupname"];
-    NSMutableArray *arr3 = [[NSMutableArray alloc]initWithObjects:@"城镇大厅",@"要塞",@"城堡",@"兵营",@"伐木场",@"铁匠铺",@"农场",@"国王祭坛", @"神秘圣地",@"车间",@"哨塔",@"防御塔",@"炮塔",@"神秘之塔",@"狮鹫龙",@"神秘藏宝室",nil];
-	[dict setObject:arr3 forKey:@"name"];
+    WAR3NightElfArchitect *neArchitect = [[WAR3NightElfArchitect alloc]init];
+    [neArchitect getDeserializedArray];
+    dict = [[NSMutableDictionary alloc]initWithCapacity:[neArchitect.deserializedArray count]];
+    [dict setObject:@"精灵建筑" forKey:@"groupname"];
+    NSMutableArray *arr3 = [[NSMutableArray alloc]initWithCapacity:[neArchitect.deserializedArray count]];
+    for (int i = 0; i<[neArchitect.deserializedArray count]; i++) {
+        NSDictionary *dictionary = neArchitect.deserializedArray[i];
+        NSString *name  = [dictionary objectForKey:@"name"];
+        [arr3 addObject:name];
+    }
+    [dict setObject:arr3 forKey:@"name"];
     [sectionData addObject:dict];
-    
-    */
     
     
     //创建一个tableView视图
@@ -191,25 +218,22 @@
 	cell.backgroundColor =  [UIColor colorWithPatternImage:[UIImage imageNamed:@"btn_listbg.png"]];
     
     //图像
-    WAR3NeutralHero *neuHero =[WAR3NeutralHero new];
-    [neuHero deserializedArray];
+    WAR3NEUnit *NEUnit =[WAR3NEUnit new];
+    [NEUnit deserializedArray];
+    WAR3NightElfArchitect *neArchitect = [WAR3NightElfArchitect new];
+    [neArchitect getDeserializedArray];
     
     if (indexPath.section ==0 ) {
-        NSMutableArray *imageArray = [[NSMutableArray alloc]initWithCapacity:[neuHero.deserializedArray count]];
-        for (int i = 0 ; i< [neuHero.deserializedArray count]; i++) {
-            NSDictionary *dictionary = neuHero.deserializedArray[i];
-            NSString *imageName = [dictionary objectForKey:@"imageName"];
-            [imageArray addObject:imageName];
-        }
-        UIImage *image = [UIImage imageNamed:[imageArray objectAtIndex:indexPath.row]];
+        NSArray *pathArray = [NSArray arrayWithObjects:@"demonhunter.gif",@"keepergrove.gif",@"priestess.gif",@"warden.gif", nil];
+        UIImage *image = [UIImage imageNamed:[pathArray objectAtIndex:indexPath.row]];
         cell.imageView.image = image;
     }
     
-    /*
+    
     if (indexPath.section ==1 ) {
-        NSMutableArray *imageArray =[[NSMutableArray alloc]initWithCapacity:[humUnit.deserializedArray count]];
-        for (int i = 0 ; i< [humUnit.deserializedArray count]; i++) {
-            NSDictionary *dictionary = humUnit.deserializedArray[i];
+        NSMutableArray *imageArray =[[NSMutableArray alloc]initWithCapacity:[NEUnit.deserializedArray count]];
+        for (int i = 0 ; i< [NEUnit.deserializedArray count]; i++) {
+            NSDictionary *dictionary = NEUnit.deserializedArray[i];
             NSString *imageName = [dictionary objectForKey:@"imageName"];
             [imageArray addObject:imageName];
         }
@@ -217,9 +241,22 @@
         UIImage *image = [UIImage imageNamed:[imageArray objectAtIndex:row]];
         cell.imageView.image = image;
     }
-    */
     
-    cell.imageView.contentMode = UIViewContentModeScaleAspectFit;
+    if (indexPath.section ==2){
+        NSMutableArray *imageArray = [[NSMutableArray alloc]initWithCapacity:[neArchitect.deserializedArray count]];
+        for (int i = 0; i<[neArchitect.deserializedArray count]; i++) {
+            NSDictionary *dictionary = neArchitect.deserializedArray[i];
+            NSString *imageName= [dictionary objectForKey:@"imageName"];
+            [imageArray addObject:imageName];
+        }
+        UIImage *image = [UIImage imageNamed:[imageArray objectAtIndex:indexPath.row]];
+        cell.imageView.image = image;
+        cell.imageView.contentMode = UIViewContentModeScaleAspectFit;
+        
+    }
+    
+         cell.imageView.contentMode = UIViewContentModeScaleAspectFit;
+    
 	//选中行时灰色
 	cell.selectionStyle = UITableViewCellSelectionStyleGray;
 	[cell setAccessoryType: UITableViewCellAccessoryDisclosureIndicator];
@@ -244,6 +281,7 @@
 	else
 	{
 		hView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 320, 40)];
+        
 	}
     
 	UIButton* eButton = [[UIButton alloc] init];
@@ -256,9 +294,9 @@
     
 	//根据是否展开，切换按钮显示图片
 	if ([self isExpanded:section])
-		[eButton setImage: [ UIImage imageNamed: @"btn_down.png" ] forState:UIControlStateNormal];
+    [eButton setImage: [ UIImage imageNamed: @"btn_down.png" ] forState:UIControlStateNormal];
 	else
-		[eButton setImage: [ UIImage imageNamed: @"btn_right.png" ] forState:UIControlStateNormal];
+    [eButton setImage: [ UIImage imageNamed: @"btn_right.png" ] forState:UIControlStateNormal];
     
 	//由于按钮的标题，
 	//4个参数是上边界，左边界，下边界，右边界。
@@ -276,20 +314,8 @@
     
 	[hView addSubview: eButton];
     
+    //	[eButton release];
 	return hView;
 }
-
-
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
