@@ -279,7 +279,7 @@
 	if (UIInterfaceOrientationLandscapeRight == [[UIDevice currentDevice] orientation] ||
         UIInterfaceOrientationLandscapeLeft == [[UIDevice currentDevice] orientation])
 	{
-		hView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 480, 40)];
+		hView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 640, 40)];
 	}
 	else
 	{
