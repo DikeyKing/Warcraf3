@@ -63,7 +63,7 @@
     _heroArray = orcHero.deserializedArray;
     _heroDic = orcHero.deserializedArray[_selectedRow];
     
-    [_description setText:[_heroDic objectForKey:@"description"]];
+    [_descriptionLabel setText:[_heroDic objectForKey:@"description"]];
     [_name setText:[_heroDic objectForKey:@"name"]];
     [_strength setText:[_heroDic objectForKey:@"str"]];
     [_dexterity setText:[_heroDic objectForKey:@"dex"]];
@@ -122,7 +122,7 @@
             cell.skillName.text = [skillArray objectAtIndex:indexPath.row];
             
             skillArray = @[[_heroDic objectForKey:@"skill1description"],[_heroDic objectForKey:@"skill2description"],[_heroDic objectForKey:@"skill3description"],[_heroDic objectForKey:@"skill4description"]];
-            cell.description.text = [skillArray objectAtIndex:indexPath.row];
+            cell.descriptionLabel.text = [skillArray objectAtIndex:indexPath.row];
             
             skillArray = @[[_heroDic objectForKey:@"skill1detail"],[_heroDic objectForKey:@"skill2detail"],[_heroDic objectForKey:@"skill3detail"],[_heroDic objectForKey:@"skill4detail"]];
             cell.skillDetail.text = [skillArray objectAtIndex:indexPath.row];

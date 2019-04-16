@@ -74,7 +74,7 @@
     UIImage *image = [UIImage imageNamed:[_unitDic objectForKey:@"imageName3"]];
     _image.image = image ;
     
-    _description.text = [_unitDic objectForKey:@"description"];
+    _descriptionLabel.text = [_unitDic objectForKey:@"description"];
     _attackRange.text = [_unitDic objectForKey:@"attackRange"];
     _dayView.text = [_unitDic objectForKey:@"dayView"];
     _nightView.text = [_unitDic objectForKey:@"nightView"];
@@ -165,7 +165,7 @@
             cell.skillName.text = [skillNameArray objectAtIndex:indexPath.row];
         }
         if (skillDescriptionArray!=nil) {
-            cell.description.text = [skillDescriptionArray objectAtIndex:indexPath.row];
+            cell.descriptionLabel.text = [skillDescriptionArray objectAtIndex:indexPath.row];
         }
         
         if (skillDetailArray!=nil)

@@ -1,0 +1,523 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C8CD5C522648596008FAB10 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A9FD23C819EE1836003B0ABF /* Default-568h@2x.png */; };
+		A9D9C81118EA5C9A0016B7E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D9C81018EA5C9A0016B7E1 /* Foundation.framework */; };
+		A9D9C81318EA5C9A0016B7E1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D9C81218EA5C9A0016B7E1 /* CoreGraphics.framework */; };
+		A9D9C81518EA5C9A0016B7E1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D9C81418EA5C9A0016B7E1 /* UIKit.framework */; };
+		A9D9C83018EA5C9A0016B7E1 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D9C82F18EA5C9A0016B7E1 /* XCTest.framework */; };
+		A9D9C83118EA5C9A0016B7E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D9C81018EA5C9A0016B7E1 /* Foundation.framework */; };
+		A9D9C83218EA5C9A0016B7E1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D9C81418EA5C9A0016B7E1 /* UIKit.framework */; };
+		A9D9C83A18EA5C9A0016B7E1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9D9C83818EA5C9A0016B7E1 /* InfoPlist.strings */; };
+		A9D9C83C18EA5C9A0016B7E1 /* Warcraft3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D9C83B18EA5C9A0016B7E1 /* Warcraft3Tests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A9D9C83318EA5C9A0016B7E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9D9C80518EA5C9A0016B7E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9D9C80C18EA5C9A0016B7E1;
+			remoteInfo = Warcraft3;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A981806818EBED4D00E164AA /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../../../../Users/Dikey/developer/Warcraft3/Default-568h@2x.png"; sourceTree = DEVELOPER_DIR; };
+		A9A100E31917AABB0031EBFF /* humanseal1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = humanseal1.jpg; path = ../../../../Users/Dikey/developer/Warcraft3/humanseal1.jpg; sourceTree = DEVELOPER_DIR; };
+		A9A100E41917AABB0031EBFF /* nightelfseal2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = nightelfseal2.jpg; path = ../../../../Users/Dikey/developer/Warcraft3/nightelfseal2.jpg; sourceTree = DEVELOPER_DIR; };
+		A9A100E51917AABB0031EBFF /* orcseal2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = orcseal2.jpg; path = ../../../../Users/Dikey/developer/Warcraft3/orcseal2.jpg; sourceTree = DEVELOPER_DIR; };
+		A9A100E61917AABB0031EBFF /* undeadseal2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = undeadseal2.jpg; path = ../../../../Users/Dikey/developer/Warcraft3/undeadseal2.jpg; sourceTree = DEVELOPER_DIR; };
+		A9A100EB1917ABDB0031EBFF /* orcseal2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = orcseal2.png; path = ../../../../Users/Dikey/developer/Warcraft3/orcseal2.png; sourceTree = DEVELOPER_DIR; };
+		A9A100ED1917AC960031EBFF /* Time@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Time@2x.png"; path = "../../../../Users/Dikey/developer/Warcraft3/Time@2x.png"; sourceTree = DEVELOPER_DIR; };
+		A9C6D88A1919B92C004BD1D2 /* Time.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Time.png; path = ../../../../Users/Dikey/developer/Warcraft3/Time.png; sourceTree = DEVELOPER_DIR; };
+		A9C6D88C191A14D6004BD1D2 /* townhall5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = townhall5.jpg; path = ../../../../Users/Dikey/developer/Warcraft3/Warcraft3/townhall5.jpg; sourceTree = DEVELOPER_DIR; };
+		A9C6D88E191A1C80004BD1D2 /* townhall6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = townhall6.jpg; path = ../../../../Users/Dikey/developer/Warcraft3/townhall6.jpg; sourceTree = DEVELOPER_DIR; };
+		A9C6D890191A1DE2004BD1D2 /* townhall001.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = townhall001.jpg; path = ../../../../Users/Dikey/developer/Warcraft3/townhall001.jpg; sourceTree = DEVELOPER_DIR; };
+		A9D9C80D18EA5C9A0016B7E1 /* WARCRAFT3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WARCRAFT3.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9D9C81018EA5C9A0016B7E1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A9D9C81218EA5C9A0016B7E1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A9D9C81418EA5C9A0016B7E1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A9D9C82E18EA5C9A0016B7E1 /* Warcraft3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Warcraft3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9D9C82F18EA5C9A0016B7E1 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		A9D9C83718EA5C9A0016B7E1 /* Warcraft3Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Warcraft3Tests-Info.plist"; sourceTree = "<group>"; };
+		A9D9C83918EA5C9A0016B7E1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A9D9C83B18EA5C9A0016B7E1 /* Warcraft3Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Warcraft3Tests.m; sourceTree = "<group>"; };
+		A9FD23C819EE1836003B0ABF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		A9FD23C919EE1836003B0ABF /* humanseal1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = humanseal1.jpg; sourceTree = "<group>"; };
+		A9FD23CA19EE1836003B0ABF /* NEimages */ = {isa = PBXFileReference; lastKnownFileType = folder; path = NEimages; sourceTree = "<group>"; };
+		A9FD23CB19EE1836003B0ABF /* nightelfseal2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nightelfseal2.jpg; sourceTree = "<group>"; };
+		A9FD23CC19EE1836003B0ABF /* orcseal2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = orcseal2.png; sourceTree = "<group>"; };
+		A9FD23CD19EE1836003B0ABF /* orcseal2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = orcseal2.jpg; sourceTree = "<group>"; };
+		A9FD23CE19EE1836003B0ABF /* pics */ = {isa = PBXFileReference; lastKnownFileType = folder; path = pics; sourceTree = "<group>"; };
+		A9FD23CF19EE1836003B0ABF /* Time.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Time.png; sourceTree = "<group>"; };
+		A9FD23D019EE1836003B0ABF /* Time@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Time@2x.png"; sourceTree = "<group>"; };
+		A9FD23D119EE1836003B0ABF /* townhall001.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = townhall001.jpg; sourceTree = "<group>"; };
+		A9FD23D219EE1836003B0ABF /* townhall6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = townhall6.jpg; sourceTree = "<group>"; };
+		A9FD23D319EE1836003B0ABF /* undeadseal2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = undeadseal2.jpg; sourceTree = "<group>"; };
+		A9FD23D419EE1836003B0ABF /* Warcraft3 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Warcraft3; sourceTree = "<group>"; };
+		A9FD23D819EE1836003B0ABF /* Warcraft3Tests */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Warcraft3Tests; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A9D9C80A18EA5C9A0016B7E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9D9C81318EA5C9A0016B7E1 /* CoreGraphics.framework in Frameworks */,
+				A9D9C81518EA5C9A0016B7E1 /* UIKit.framework in Frameworks */,
+				A9D9C81118EA5C9A0016B7E1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9D9C82B18EA5C9A0016B7E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9D9C83018EA5C9A0016B7E1 /* XCTest.framework in Frameworks */,
+				A9D9C83218EA5C9A0016B7E1 /* UIKit.framework in Frameworks */,
+				A9D9C83118EA5C9A0016B7E1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A952C378195863A000BF5CF6 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				A981806818EBED4D00E164AA /* Default-568h@2x.png */,
+				A9A100ED1917AC960031EBFF /* Time@2x.png */,
+				A9C6D88A1919B92C004BD1D2 /* Time.png */,
+				A9A100E31917AABB0031EBFF /* humanseal1.jpg */,
+				A9A100E41917AABB0031EBFF /* nightelfseal2.jpg */,
+				A9A100E51917AABB0031EBFF /* orcseal2.jpg */,
+				A9A100EB1917ABDB0031EBFF /* orcseal2.png */,
+				A9A100E61917AABB0031EBFF /* undeadseal2.jpg */,
+				A9C6D88C191A14D6004BD1D2 /* townhall5.jpg */,
+				A9C6D88E191A1C80004BD1D2 /* townhall6.jpg */,
+				A9C6D890191A1DE2004BD1D2 /* townhall001.jpg */,
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
+		A9D9C80418EA5C9A0016B7E1 = {
+			isa = PBXGroup;
+			children = (
+				A9FD23C819EE1836003B0ABF /* Default-568h@2x.png */,
+				A9FD23C919EE1836003B0ABF /* humanseal1.jpg */,
+				A9FD23CA19EE1836003B0ABF /* NEimages */,
+				A9FD23CB19EE1836003B0ABF /* nightelfseal2.jpg */,
+				A9FD23CC19EE1836003B0ABF /* orcseal2.png */,
+				A9FD23CD19EE1836003B0ABF /* orcseal2.jpg */,
+				A9FD23CE19EE1836003B0ABF /* pics */,
+				A9FD23CF19EE1836003B0ABF /* Time.png */,
+				A9FD23D019EE1836003B0ABF /* Time@2x.png */,
+				A9FD23D119EE1836003B0ABF /* townhall001.jpg */,
+				A9FD23D219EE1836003B0ABF /* townhall6.jpg */,
+				A9FD23D319EE1836003B0ABF /* undeadseal2.jpg */,
+				A9FD23D419EE1836003B0ABF /* Warcraft3 */,
+				A9FD23D819EE1836003B0ABF /* Warcraft3Tests */,
+				A9D9C83518EA5C9A0016B7E1 /* Warcraft3Tests */,
+				A9D9C80F18EA5C9A0016B7E1 /* Frameworks */,
+				A9D9C80E18EA5C9A0016B7E1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A9D9C80E18EA5C9A0016B7E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9D9C80D18EA5C9A0016B7E1 /* WARCRAFT3.app */,
+				A9D9C82E18EA5C9A0016B7E1 /* Warcraft3Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A9D9C80F18EA5C9A0016B7E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9D9C81018EA5C9A0016B7E1 /* Foundation.framework */,
+				A9D9C81218EA5C9A0016B7E1 /* CoreGraphics.framework */,
+				A9D9C81418EA5C9A0016B7E1 /* UIKit.framework */,
+				A9D9C82F18EA5C9A0016B7E1 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A9D9C83518EA5C9A0016B7E1 /* Warcraft3Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A9D9C83B18EA5C9A0016B7E1 /* Warcraft3Tests.m */,
+				A9D9C83618EA5C9A0016B7E1 /* Supporting Files */,
+			);
+			path = Warcraft3Tests;
+			sourceTree = "<group>";
+		};
+		A9D9C83618EA5C9A0016B7E1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A952C378195863A000BF5CF6 /* New Group */,
+				A9D9C83718EA5C9A0016B7E1 /* Warcraft3Tests-Info.plist */,
+				A9D9C83818EA5C9A0016B7E1 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A9D9C80C18EA5C9A0016B7E1 /* Warcraft3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9D9C83F18EA5C9A0016B7E1 /* Build configuration list for PBXNativeTarget "Warcraft3" */;
+			buildPhases = (
+				A9D9C80918EA5C9A0016B7E1 /* Sources */,
+				A9D9C80A18EA5C9A0016B7E1 /* Frameworks */,
+				A9D9C80B18EA5C9A0016B7E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Warcraft3;
+			productName = Warcraft3;
+			productReference = A9D9C80D18EA5C9A0016B7E1 /* WARCRAFT3.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A9D9C82D18EA5C9A0016B7E1 /* Warcraft3Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9D9C84218EA5C9A0016B7E1 /* Build configuration list for PBXNativeTarget "Warcraft3Tests" */;
+			buildPhases = (
+				A9D9C82A18EA5C9A0016B7E1 /* Sources */,
+				A9D9C82B18EA5C9A0016B7E1 /* Frameworks */,
+				A9D9C82C18EA5C9A0016B7E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9D9C83418EA5C9A0016B7E1 /* PBXTargetDependency */,
+			);
+			name = Warcraft3Tests;
+			productName = Warcraft3Tests;
+			productReference = A9D9C82E18EA5C9A0016B7E1 /* Warcraft3Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A9D9C80518EA5C9A0016B7E1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = WAR3;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Dikey;
+				TargetAttributes = {
+					A9D9C80C18EA5C9A0016B7E1 = {
+						DevelopmentTeam = WMSS77X69Q;
+						ProvisioningStyle = Automatic;
+					};
+					A9D9C82D18EA5C9A0016B7E1 = {
+						TestTargetID = A9D9C80C18EA5C9A0016B7E1;
+					};
+				};
+			};
+			buildConfigurationList = A9D9C80818EA5C9A0016B7E1 /* Build configuration list for PBXProject "Warcraft3" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = A9D9C80418EA5C9A0016B7E1;
+			productRefGroup = A9D9C80E18EA5C9A0016B7E1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A9D9C80C18EA5C9A0016B7E1 /* Warcraft3 */,
+				A9D9C82D18EA5C9A0016B7E1 /* Warcraft3Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A9D9C80B18EA5C9A0016B7E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C8CD5C522648596008FAB10 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9D9C82C18EA5C9A0016B7E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9D9C83A18EA5C9A0016B7E1 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A9D9C80918EA5C9A0016B7E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9D9C82A18EA5C9A0016B7E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9D9C83C18EA5C9A0016B7E1 /* Warcraft3Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A9D9C83418EA5C9A0016B7E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9D9C80C18EA5C9A0016B7E1 /* Warcraft3 */;
+			targetProxy = A9D9C83318EA5C9A0016B7E1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A9D9C83818EA5C9A0016B7E1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9D9C83918EA5C9A0016B7E1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A9D9C83D18EA5C9A0016B7E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TREAT_MISSING_BASELINES_AS_TEST_FAILURES = YES;
+			};
+			name = Debug;
+		};
+		A9D9C83E18EA5C9A0016B7E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				SDKROOT = iphoneos;
+				TREAT_MISSING_BASELINES_AS_TEST_FAILURES = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A9D9C84018EA5C9A0016B7E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WMSS77X69Q;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Warcraft3/Warcraft3-Prefix.pch";
+				INFOPLIST_FILE = "Warcraft3/Warcraft3-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = /Users/Dikey/developer/2014a/Warcraft3;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "www.dikeyking.com.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = WARCRAFT3;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A9D9C84118EA5C9A0016B7E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WMSS77X69Q;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Warcraft3/Warcraft3-Prefix.pch";
+				INFOPLIST_FILE = "Warcraft3/Warcraft3-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = /Users/Dikey/developer/2014a/Warcraft3;
+				PRODUCT_BUNDLE_IDENTIFIER = "www.dikeyking.com.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = WARCRAFT3;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A9D9C84318EA5C9A0016B7E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Warcraft3.app/Warcraft3";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Warcraft3/Warcraft3-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Warcraft3Tests/Warcraft3Tests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "www.dikeyking.com.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		A9D9C84418EA5C9A0016B7E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Warcraft3.app/Warcraft3";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Warcraft3/Warcraft3-Prefix.pch";
+				INFOPLIST_FILE = "Warcraft3Tests/Warcraft3Tests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "www.dikeyking.com.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A9D9C80818EA5C9A0016B7E1 /* Build configuration list for PBXProject "Warcraft3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9D9C83D18EA5C9A0016B7E1 /* Debug */,
+				A9D9C83E18EA5C9A0016B7E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9D9C83F18EA5C9A0016B7E1 /* Build configuration list for PBXNativeTarget "Warcraft3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9D9C84018EA5C9A0016B7E1 /* Debug */,
+				A9D9C84118EA5C9A0016B7E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9D9C84218EA5C9A0016B7E1 /* Build configuration list for PBXNativeTarget "Warcraft3Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9D9C84318EA5C9A0016B7E1 /* Debug */,
+				A9D9C84418EA5C9A0016B7E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A9D9C80518EA5C9A0016B7E1 /* Project object */;
+}
